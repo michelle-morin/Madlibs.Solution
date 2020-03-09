@@ -39,9 +39,22 @@ namespace MadLibs.Controllers
     }
 
     [Route("/trip-story")]
-    public ActionResult TripStory()
+    public ActionResult TripStory(string adjective, string person1, string person2, string store, string foodItem1, string foodItem2, string exclamation, string noun1, string noun2, string yell, string verb, string destination)
     {
-
+      WeekendWords myWeekendWords = new WeekendWords();
+      myWeekendWords.Adjective = adjective;
+      myWeekendWords.Person1 = person1;
+      myWeekendWords.Person2 = person2;
+      myWeekendWords.Store = store;
+      myWeekendWords.FoodItem1 = foodItem1;
+      myWeekendWords.FoodItem2 = foodItem2;
+      myWeekendWords.Exclamation = exclamation;
+      myWeekendWords.Noun1 = noun1;
+      myWeekendWords.Noun2 = noun2;
+      myWeekendWords.Yell = yell;
+      myWeekendWords.Verb = verb;
+      myWeekendWords.Destination = destination;
+      return View(myWeekendWords);
     }
   }
 }
