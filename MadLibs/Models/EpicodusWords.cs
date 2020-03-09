@@ -1,6 +1,6 @@
 namespace MadLibs.Models
 {
-  public class StoryWords
+  public class EpicodusWords
   {
     public string Time { get; set; }
     public string Name { get; set; }
