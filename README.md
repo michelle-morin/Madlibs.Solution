@@ -10,8 +10,8 @@ _This project is a web application that presents users with a form with fields f
 
 ## Specifications:
 
-| Specification | Example Input | Example Output | Explanation of Selected Input Values |
-| ------------- |:-------------:| :-------------:| -----------------:|
+| Specification | Example Input | Example Output | 
+| ------------- |:-------------:| :-------------:|
 | Application allows user to navigate to form at URL route "/form" | user enters URL in web browser | web browser displays view associated with the form route |
 | Application includes a form where users can submit words for various form fields and their responses are stored as properties of a madlibs class | user submits form | property values are assigned to form responses  |
 | Application navigates to madlibs (story) view when user submits form | user submits form | webpage redirects to "/story" URL |
